@@ -12,7 +12,6 @@ class WeatherService {
 
   static const Duration requestTimeout = Duration(seconds: 5);
   final http.Client Function() _clientFactory;
-
   Future<List<WeatherForecastModel>> getWeatherForecast(
     List<String> listCitySearch,
   ) async {

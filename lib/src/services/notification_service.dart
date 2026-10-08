@@ -15,7 +15,6 @@ class NotificationService {
 
   Future<void> initialize() async {
     _setupMessageHandlers();
-
     // 1. Solicitar permissões (Obrigatório para iOS e Android 13+)
     NotificationSettings settings = await _fcm.requestPermission(
       alert: true,

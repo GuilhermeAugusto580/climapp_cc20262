@@ -29,6 +29,7 @@ class ListCityController extends ChangeNotifier {
     'Itabaiana,SE',
     'Salvador,BA',
     'Carapicuíba,SP',
+    'Curitiba,PR',
   ];
   Future<void> loadCities() async {
     isLoading = true;
